@@ -1,0 +1,48 @@
+.footer {
+  background-color: #3c3c3c;
+  padding: 49px 0;
+  @media (max-width: $md4+px) {
+    padding: 35px 0;
+  }
+  &__body {
+    text-align: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin: 0 0 40px 0;
+    @media (max-width: $md4+px) {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  &__menu {
+    margin: 0 0 30px 0;
+    @media (max-width: $md4+px) {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  &__list {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 0 10px;
+    }
+  }
+
+  &__link {
+    color: #a4a4a4;
+    font-size: 14px;
+    text-align: left;
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__copy {
+    color: #6c6c6c;
+    font-size: 14px;
+  }
+}
