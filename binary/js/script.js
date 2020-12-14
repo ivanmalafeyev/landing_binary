@@ -931,7 +931,7 @@ if (inputs) {
     e.isPlaceholder = isPlaceholder;
 
     if (dv) {
-      e.style.color = "rgba(255, 255, 255, ".concat(PLACEHOLDER_OPACITY, ")");
+      e.style.color = "rgba(0, 0, 0, ".concat(PLACEHOLDER_OPACITY, ")");
       e.value = dv;
     }
 
@@ -940,7 +940,7 @@ if (inputs) {
         e.value = "";
         isPlaceholder = false;
         e.isPlaceholder = isPlaceholder;
-        e.style.color = "rgba(255, 255, 255, 1)";
+        e.style.color = "rgba(0, 0, 0, 1)";
       }
     });
     e.addEventListener("blur", function () {
@@ -948,7 +948,7 @@ if (inputs) {
         e.value = dv;
         isPlaceholder = true;
         e.isPlaceholder = isPlaceholder;
-        e.style.color = "rgba(255, 255, 255, ".concat(PLACEHOLDER_OPACITY, ")");
+        e.style.color = "rgba(0, 0, 0, ".concat(PLACEHOLDER_OPACITY, ")");
       }
     });
   });
