@@ -6,7 +6,7 @@ if (inputs) {
     let isPlaceholder = true;
     e.isPlaceholder = isPlaceholder;
     if (dv) {
-      e.style.opacity = PLACEHOLDER_OPACITY;
+      e.style.color = `rgba(255, 255, 255, ${PLACEHOLDER_OPACITY})`;
       e.value = dv;
     }
     e.addEventListener("focus", () => {
@@ -14,7 +14,7 @@ if (inputs) {
         e.value = "";
         isPlaceholder = false;
         e.isPlaceholder = isPlaceholder;
-        e.style.opacity = "1";
+        e.style.color = `rgba(255, 255, 255, 1)`;
       }
     });
     e.addEventListener("blur", () => {
@@ -22,7 +22,7 @@ if (inputs) {
         e.value = dv;
         isPlaceholder = true;
         e.isPlaceholder = isPlaceholder;
-        e.style.opacity = PLACEHOLDER_OPACITY;
+        e.style.color = `rgba(255, 255, 255, ${PLACEHOLDER_OPACITY})`;
       }
     });
   });
